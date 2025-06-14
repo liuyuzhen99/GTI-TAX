@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <stylestrategy>PreferAntialias</stylestrategy>
+   </font>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Excel Converter for Invoice</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="pictures.qrc">
+    <normaloff>:/icon/10692.png</normaloff>:/icon/10692.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/background/white-concrete-wall.jpg);
+background-color: rgba(0,0,0,0);</string>
+  </property>
+  <property name="animated">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_7">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Audi Type</family>
+        <pointsize>15</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Excel Converter for Invoice</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>GTI --&gt; Tax</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="3" column="0">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>238</width>
+            <height>65</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <spacer name="horizontalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="font">
+             <font>
+              <family>Audi Type</family>
+              <pointsize>11</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+              <stylestrategy>PreferDefault</stylestrategy>
+              <kerning>true</kerning>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton {
+	background-color: #FFA500;
+	border: 2px solid #FFA500;
+	color: black;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: #FFC04D;
+	border-color: #FFC04D;
+}
+
+QPushButton:pressed {
+	background-color: #FF8500;
+	border-color: #FF8500;
+}</string>
+            </property>
+            <property name="text">
+             <string>GTI -&gt; Tax</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_11">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="font">
+             <font>
+              <family>Audi Type</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid #808080;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #f0f0f0;
+	selection-color: white;
+	selection-background-color:#5CACEE;
+}</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="font">
+             <font>
+              <family>Audi Type</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton {
+	background-color: #FF0000;
+	border: 2px solid #FF0000;
+	color: black;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: #FF3333;
+	border-color: #FF3333;
+}
+
+QPushButton:pressed {
+	background-color: #CC0000;
+	border-color: #CC0000;
+}</string>
+            </property>
+            <property name="text">
+             <string>Choose Tax Template File</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLineEdit" name="lineEdit_2">
+            <property name="font">
+             <font>
+              <family>Audi Type</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid #808080;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #f0f0f0;
+	selection-color: white;
+	selection-background-color:#5CACEE;
+}</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="font">
+             <font>
+              <family>Audi Type</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton {
+	background-color: #FF0000 !important;
+	border: 2px solid #FF0000;
+	color: black;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: #FF3333 !important;
+	border-color: #FF3333;
+}
+
+QPushButton:pressed {
+	background-color: #CC0000 !important;
+	border-color: #CC0000;
+}</string>
+            </property>
+            <property name="text">
+             <string>Choose file from GTI</string>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+            <property name="default">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>278</width>
+            <height>65</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>GTI &lt;-- Tax</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>168</width>
+            <height>16</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QLineEdit" name="lineEdit_3">
+            <property name="font">
+             <font>
+              <family>Audi Type</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid #808080;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #f0f0f0;
+	selection-color: white;
+	selection-background-color:#5CACEE;
+}</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="font">
+             <font>
+              <family>Audi Type</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton {
+	background-color: #FF0000 !important;
+	border: 2px solid #FF0000;
+	color: black;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: #FF3333 !important;
+	border-color: #FF3333;
+}
+
+QPushButton:pressed {
+	background-color: #CC0000 !important;
+	border-color: #CC0000;
+}</string>
+            </property>
+            <property name="text">
+             <string>Choose file from GTI</string>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+            <property name="default">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>168</width>
+            <height>17</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="0">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QLineEdit" name="lineEdit_4">
+            <property name="font">
+             <font>
+              <family>Audi Type</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid #808080;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #f0f0f0;
+	selection-color: white;
+	selection-background-color:#5CACEE;
+}</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="font">
+             <font>
+              <family>Audi Type</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton {
+	background-color: #FF0000 !important;
+	border: 2px solid #FF0000;
+	color: black;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: #FF3333 !important;
+	border-color: #FF3333;
+}
+
+QPushButton:pressed {
+	background-color: #CC0000 !important;
+	border-color: #CC0000;
+}</string>
+            </property>
+            <property name="text">
+             <string>Choose file from Tax</string>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+            <property name="default">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0">
+         <spacer name="verticalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>168</width>
+            <height>16</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="5" column="0">
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QLineEdit" name="lineEdit_5">
+            <property name="font">
+             <font>
+              <family>Audi Type</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid #808080;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #f0f0f0;
+	selection-color: white;
+	selection-background-color:#5CACEE;
+}</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton_6">
+            <property name="font">
+             <font>
+              <family>Audi Type</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton {
+	background-color: #FF0000 !important;
+	border: 2px solid #FF0000;
+	color: black;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: #FF3333 !important;
+	border-color: #FF3333;
+}
+
+QPushButton:pressed {
+	background-color: #CC0000 !important;
+	border-color: #CC0000;
+}</string>
+            </property>
+            <property name="text">
+             <string>Choose file 3</string>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+            <property name="default">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="6" column="0">
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>168</width>
+            <height>17</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="7" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <spacer name="horizontalSpacer_12">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_7">
+            <property name="font">
+             <font>
+              <family>Audi Type</family>
+              <pointsize>11</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+              <stylestrategy>PreferDefault</stylestrategy>
+              <kerning>true</kerning>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton {
+	background-color: #FFA500;
+	border: 2px solid #FFA500;
+	color: black;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: #FFC04D;
+	border-color: #FFC04D;
+}
+
+QPushButton:pressed {
+	background-color: #FF8500;
+	border-color: #FF8500;
+}</string>
+            </property>
+            <property name="text">
+             <string>Tax -&gt; GTI</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_13">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="font">
+    <font>
+     <family>Audi Type</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="tabletTracking">
+    <bool>false</bool>
+   </property>
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: red;</string>
+   </property>
+   <property name="sizeGripEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="pictures.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>gti_file_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>877</x>
+     <y>91</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>757</x>
+     <y>36</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>tax_template_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>840</x>
+     <y>215</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>925</x>
+     <y>37</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>gti2tax_on_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>504</x>
+     <y>335</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>585</x>
+     <y>375</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>gti_reverse_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>899</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>374</x>
+     <y>39</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>tax_file_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>863</x>
+     <y>192</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>34</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>file3_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>906</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>854</x>
+     <y>5</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>tax2gti_on_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>537</x>
+     <y>334</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>832</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>file_select_button_clicked()</slot>
+  <slot>gti2tax_on_button_clicked()</slot>
+  <slot>tax2gti_on_button_clicked()</slot>
+  <slot>tax_template_button_clicked()</slot>
+  <slot>gti_file_button_clicked()</slot>
+  <slot>file3_button_clicked()</slot>
+  <slot>gti_reverse_button_clicked()</slot>
+  <slot>tax_file_button_clicked()</slot>
+ </slots>
+</ui>
