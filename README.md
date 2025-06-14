@@ -25,5 +25,5 @@ based on above file to generate clock info for each staff, and support to check 
 5. excel2ppt_qt.py: "front end" logic, define the function when click the button and show error message 界面，按钮函数，展示异常
 
 ## run运行
-
+dist/excelConverter_v1.2.exe
 
