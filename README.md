@@ -6,13 +6,15 @@ SAP GTI模块下载下来的发票数据和上传税局开票所用数据格式�
 
 ## Function功能
 upload tables to the application上传以下表格到应用:
-1. access_logbook.xlsx: staff clock record员工打卡记录
-2. businessTriplist.xlsx: staff business trip list员工出差记录
-3. cardProblemlist.xlsx: staff card problem list员工卡失效记录
+1. GTI导出文件
+2. 税局模版
+3. 税局导出数据
 
 based on above file to generate clock info for each staff, and support to check the result by using employee id根据以上信息生成每个员工每月的打卡记录，并可根据员工号进行筛选
 
+![image](https://github.com/user-attachments/assets/456e37c2-d92f-4161-867a-c0af2d113d12)
 
+![image](https://github.com/user-attachments/assets/275f19c1-5886-4b70-852e-e5c54c4241c9)
 
 
 ## logic逻辑
